@@ -1,0 +1,4 @@
+// ATM Menu System
+#include <iostream>
+using namespace std;
+int main(){int choice;double balance=50000,amount;cout<<"===== ATM MENU =====\n1. Check Balance\n2. Deposit Money\n3. Withdraw Money\n4. Exit";cout<<"\nEnter your choice: ";cin>>choice;switch(choice){case 1:cout<<"Your balance = Rs. "<<balance;break;case 2:cout<<"Enter deposit amount: ";cin>>amount;balance=balance+amount;cout<<"Amount deposited successfully\nNew balance = Rs. "<<balance;break;case 3:cout<<"Enter withdrawal amount: ";cin>>amount;if(amount<=balance){balance=balance-amount;cout<<"Please collect your cash\nRemaining balance = Rs. "<<balance;}else cout<<"Insufficient balance";break;case 4:cout<<"Thank you for using the ATM";break;default:cout<<"Invalid choice";}return 0;}
